@@ -1,0 +1,117 @@
+* {
+  transition: transform ease-in-out 0.2s;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-1,
+#box-2 {
+  /*  background-color: black;  */
+  border-radius: 12px;
+  width: 40vw;
+  height: 70vh;
+  color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  /*font-size: 5vmin;*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid white;
+  transition: transform ease-in-out 0.2s;
+}
+#box-1 {
+  background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+  transform: skewY(-10deg);
+}
+#box-1:hover {
+  transform: skewY(-5deg);
+}
+#box-2 {
+  background: linear-gradient(to left, #0099ff 0%, #66ffff 100%);
+  transform: skewY(10deg);
+}
+#box-2:hover {
+  transform: skewY(5deg);
+}
+#box-1 img:hover {
+  transform: scale(1.2);
+}
+
+.ml {
+  margin-left: 2.5px;
+}
+.mr {
+  margin-right: 2.5px;
+}
+
+.flex {
+  display: flex;
+}
+.row {
+  flex-direction: row;
+}
+
+.tretimer {
+  justify-content: space-between;
+}
+
+.tretimer time {
+  width: 100%;
+  margin: 5px;
+  padding: 2.5px;
+  /*height: 100%;*/
+  background-color: white;
+  border-radius: 12px;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: default;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.tretimer time:hover {
+  transform: scale(1.5);
+}
+
+time img {
+  width: 100%;
+  height: auto;
+}
+
+error {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60vmin;
+}
+
+b {
+  font-weight: bolder;
+}
