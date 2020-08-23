@@ -76,6 +76,8 @@ body {
 }
 
 .tretimer time {
+  box-shadow:
+#000000 11px -8px 0px 2px
   width: 100%;
   margin: 5px;
   padding: 2.5px;
